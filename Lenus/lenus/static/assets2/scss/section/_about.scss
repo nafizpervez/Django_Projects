@@ -1,0 +1,72 @@
+//  06. about css here
+.hero_about_section{
+    padding: 99px 0 133px;
+    @media #{$tablet-device}{
+        flex-direction: column;
+        padding: 54px 0 40px;
+    }
+    @media #{$large-mobile}{
+        flex-direction: column;
+        padding: 32px 0 10px;
+    }
+    & .hero_content.m-0{
+        @media #{$tablet-device}{
+            margin-bottom: 75px !important;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 60px !important;
+        }
+    }
+}
+
+.about_position_img{
+    top: 55%;
+    transform: translatey(-50%);
+    bottom: auto;
+    left: 160px;
+    @media #{$laptop-device}{
+        left: 20px;
+    }
+    @media #{$desktop-device}{
+        left: 20px;
+    }
+    @media #{$tablet-device}{
+        top: inherit;
+        transform: inherit;
+        left: 0;
+    }
+    @media #{$large-mobile}{
+        top: inherit;
+        transform: inherit;
+        left: 0;
+    }
+}
+
+.business_chooseus.about_choose{
+    padding: 122px 0 267px;
+    @media #{$desktop-device}{
+        padding: 38px 0 160px;
+    }
+    @media #{$tablet-device}{
+        padding: 8px 0 85px;
+    }
+    @media #{$large-mobile}{
+        padding: 5px 0 68px;
+    }
+}
+
+.testimonial_bg{
+    background: #f0f3f9;
+    & .testimonial_inner{
+        padding: 210px 0 165px;
+        @media #{$desktop-device}{
+            padding: 124px 0 120px;
+        }
+        @media #{$tablet-device}{
+            padding: 75px 0 0;
+        }
+        @media #{$large-mobile}{
+            padding: 56px 0 0;
+        }
+    }
+}

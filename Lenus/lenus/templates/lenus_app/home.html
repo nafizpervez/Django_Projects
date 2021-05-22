@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+   <link rel="apple-touch-icon" sizes="180x180" href="{%static "images/apple-touch-icon.png"%}">
+<link rel="icon" type="image/png" sizes="32x32" href="{%static "images/favicon-32x32.png"%}">
+<link rel="icon" type="image/png" sizes="16x16" href="{%static "images/favicon-16x16.png"%}">
+<link rel="manifest" href="{%static "images/site.webmanifest"%}">
+
+  <link rel="stylesheet" href="{% static "assets1/vendor/bootstrap/css/bootstrap.min.css"%}">
+  <link rel="stylesheet" href="{%static "assets1/vendor/font-awesome/css/font-awesome.min.css"%}">
+  <link rel="stylesheet" href="{%static "assets1/vendor/font-awesome/css/font-awesome.css"%}">
+  <link rel="stylesheet" href="{%static "assets1/vendor/font-awesome/css/font-awesome.min.css.map"%}">
+  <link rel="stylesheet" href="{%static "assets1/vendor/ionicons/css/ionicons.min.css"%}">
+  <link rel="stylesheet" href="{%static "assets1/vendor/owl.carousel/assets/owl.carousel.min.css"%}">
+  <link rel="stylesheet" href="{%static "assets1/vendor/venobox/venobox.css"%}">
+
+  <link rel="stylesheet" href="{% static "assetsmed/vendor/animate.css/animate.min.css"%}">
+  <link rel="stylesheet" href="{% static "assetsmed/vendor/aos/aos.css"%}">
+  <link rel="stylesheet" href="{% static "assetsmed/vendor/bootstrap/css/bootstrap.min.css"%}">
+  <link rel="stylesheet" href="{% static "assetsmed/vendor/bootstrap-icons/bootstrap-icons.css"%}">
+  <link rel="stylesheet" href="{% static "assetsmed/vendor/boxicons/css/boxicons.min.css"%}">
+  <link rel="stylesheet" href="{% static "assetsmed/vendor/fontawesome-free/css/all.min.css"%}">
+  <link rel="stylesheet" href="{% static "assetsmed/vendor/glightbox/css/glightbox.min.css"%}">
+  <link rel="stylesheet" href="{% static "assetsmed/vendor/swiper/swiper-bundle.min.css"%}">
+  <link rel="stylesheet" href="{% static "assetsmed/css/style.css"%}">
+ 
+
+
+
+    <link rel="stylesheet" href="{%static "css/bootstrap.min.css"%}">
+    <link rel="stylesheet" href="{%static "js/animate.css"%}">
+    <link rel="stylesheet" href="{% static "css/style.css"%}">
+    <link rel="stylesheet" href="{%static "css/stylecounter.css"%}">
+    <title>lenus</title>
+</head>
+<body>
+    <!--=====home page start from here=====-->
+    <div class="container-fluid">
+
+        <!---===home-1 and the start menu =======-->
+
+        <div class="home-1" style="background-image: url({% static "images/medical.png"%});" >
+            <div class="blar">
+
+                <!---===menu start from here=======-->
+                <div class="menu">
+                    <div class="row">
+                        <!--===logo part start from here====-->
+                        <div class="col-lg-2">
+                            <h1 data-wow-duration="4s" class="wow tada">LENUS</h1>
+                        </div>
+
+                        <div class="col-lg-8">
+                            <ul class="nav justify-content-end py-3">
+                                <li class="nav-item"><a  class="nav-link" href="/index">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/profile">Profile</a></li>
+                                <li class ="nav-item"><a class="nav-link" href="/services">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+                                 {% if user.is_authenticated %}
+                                <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                                {%else%}
+                                <li class="nav-item"><a class="nav-link" href="/signup">Login/Register</a></li>
+
+                                {%endif%}
+                            </ul>
+                        </div>
+                        <!--===logo part end here=====-->
+                    </div>
+
+                </div>
+
+
+                <!--======menu ends here=========-->
+
+
+
+            <div class="home-con">
+
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 data-wow-duration="1s"  class="wow bounceInLeft">WELCOME</h1>
+                        <hr class="wow bounceInLeft">
+                        <p data-wow-duration="3s" class="wow fadeIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rem neque deleniti aliquid quasi pariatur dolorum voluptate, eum voluptas reprehenderit nostrum maxime dicta eveniet labore architecto officia porro ipsum animi dolor. Repellat minus labore debitis facere corrupti atque aperiam dicta cum voluptas officia itaque eum nulla, natus vitae veniam id.</p>
+                        
+
+                    </div>
+                    <div class="col-md-6">
+                        <div id="banner">
+
+
+                          
+                            <!--Twnty Twnty Counter jquery BEgins-->
+                            <div class="card">
+                              <div class="card-body text-center">
+                                
+                            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                            <div class="elfsight-app-90a93256-623c-4005-8c77-5cc9e56726be"></div>
+
+
+                              </div>
+                            </div>
+                            <!--Twnty Twnty Counter jquery Ends-->
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+        <!---======home-2 start form here=======-->
+        <!--====
+
+            ==this page contain the service pages....
+            ==service page design and other things....
+        =====-->
+
+
+
+        <div class="home-2" style="background-image: url({%static "images/img5.jpg"%})">
+            <div class="blar">
+
+
+
+                    <h1 class="wow flash">Our Services</h1>
+                    <hr>
+                    <!--==========
+                        contant for the home page-2
+                        service page
+                        our services
+
+                    ==============-->
+                    <div class="home-2-contant">
+                        <!---=========
+                            first row for the services
+                        ========-->
+                        <div class="row" style="padding:10px;">
+                            <div class="col-3" style="background-image: url({%static "images/img11.jpg"%});background-size: cover;,background-position: center center;">
+                                <a href="/ambu">Ambulance</a>
+
+                            </div>
+                            <div class="col-3" style="background-image: url({%static "images/doc.jpg"%});background-size: cover;,background-position: center center;">
+                                <a href="/doc">Doctor</a>
+
+                            </div>
+                            <div class="col-3" style="background-image: url({%static "images/meds.jpg"%});background-size: cover;,background-position: center center;">
+                                <a href="/medi">Medicine</a>
+
+                            </div>
+                        </div>
+                        <!--====first row ends here=====-->
+
+
+                        <!--=====
+                            second row start from here
+                        =======-->
+
+                        <div class="row" style="padding:10px;">
+                            <div class="col-3" style="background-image: url({%static "images/vol.jpg"%});background-size: cover;,background-position: center center;">
+                                <a href="/volun">Volunteer</a>
+
+                            </div>
+                            <div class="col-3" style="background-image: url({%static "images/img12.jpg"%});background-size: cover;,background-position: center center;">
+                                <a href="/fire_ser">Fire Service</a>
+
+                            </div>
+                            <div class="col-3" style="background-image: url({%static "images/img3.jpg"%});background-size: cover;,background-position: center center;">
+                                <a href="/police">Police</a>
+
+                            </div>
+                        </div>
+
+                        <!--====second row ends here=====-->
+
+
+
+                        <!--=====
+                            3rd row start from here
+                        =======-->
+
+                        <div class="row" style="padding:10px;">
+                            <div class="col-3" style="background-image: url({%static "images/covid.jpg"%});background-size: cover;,background-position: center center;">
+                                <a href="/blood">COVID19</a>
+
+                            </div>
+                            <div class="col-3" style="background-image: url({%static "images/phy.jpg"%});background-size: cover;,background-position: center center;">
+                                <a href="/physio">Physiotherapist</a>
+
+                            </div>
+                            <div class="col-3" style="background-image: url({%static "images/safe.jpg"%});background-size: cover;,background-position: center center;">
+                                <a href="/others">Stay Safe</a>
+
+                            </div>
+                        </div>
+
+                        <!--====3rd row ends here=====-->
+                    </div>
+
+
+
+
+
+
+            </div>
+
+        </div>
+        
+        <!---=====home-3 start form here======-->
+
+        <!--=====
+            page 3 contai hold the infor mation and promotion
+        =====-->
+
+        <div class="home-3" style="background-image: url({%static "images/home3.jpg"%}); background-size: cover; background-position: center center;; ">
+            <div class="blar" style="width:100%; height:100%;">
+               
+
+                <div class="section-counter paralax-mf bg-image" >
+                    <div class="overlay-mf"></div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-3 col-lg-3">
+                          <div class="counter-box counter-box pt-4 pt-md-0">
+                            <div class="counter-ico">
+                              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
+                            </div>
+                            <div class="counter-num">
+                              <p class="counter">10</p>
+                              <span class="counter-text">Workers</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                          <div class="counter-box pt-4 pt-md-0">
+                            <div class="counter-ico">
+                              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+                            </div>
+                            <div class="counter-num">
+                              <p class="counter">1</p>
+                              <span class="counter-text">YEARS OF EXPERIENCE</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                          <div class="counter-box pt-4 pt-md-0">
+                            <div class="counter-ico">
+                              <span class="ico-circle"><i class="ion-ios-people"></i></span>
+                            </div>
+                            <div class="counter-num">
+                              <p class="counter">6</p>
+                              <span class="counter-text">HELPING ORGANISATIONS</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                          <div class="counter-box pt-4 pt-md-0">
+                            <div class="counter-ico">
+                              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
+                            </div>
+                            <div class="counter-num">
+                              <p class="counter">2</p>
+                              <span class="counter-text">AWARD WON</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-center" style="padding-top: 2%;">
+                    <div class="counter-ico">
+                        <span class="ico-circle"><i class="icon ion-quote" style="color: white"></i></span>
+                      </div>
+                      <h6 class="display-9" style="color: aliceblue; ">“The purpose of life is not to be happy. It is to be useful, to be honorable, 
+                          to be compassionate, to have it make some difference that you have lived and lived well.”</h6>
+                  </div>
+                  
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+        <!--Targer container-->
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="title-box text-center">
+                  <h3 class="title-a">
+                      <br>
+                    Our Goal
+                  </h3>
+                  
+                    
+                  
+                  <div class="line-mf"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="service-box">
+                  <div class="service-ico">
+                    <span class="ico-circle"><i class="icon icon ion-happy-outline"></i></span>
+                  </div>
+                  <div class="service-content">
+                    <h2 class="s-title">Happy Client</h2>
+                    <!--<p class="s-description text-center">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                      provident vitae! Magni
+                      tempora perferendis eum non provident.
+                    </p>-->
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-box">
+                  <div class="service-ico">
+                    <span class="ico-circle"><i class="icon icon ion-star"></i></span>
+                  </div>
+                  <div class="service-content">
+                    <h2 class="s-title">Best Platform</h2>
+                    <!--<p class="s-description text-center">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                      provident vitae! Magni
+                      tempora perferendis eum non provident.
+                    </p>-->
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-box">
+                  <div class="service-ico">
+                    <span class="ico-circle"><i class="icon icon ion-ios-eye"></i></span>
+                  </div>
+                  <div class="service-content">
+                    <h2 class="s-title">Keen Monitoring</h2>
+                    <!--<p class="s-description text-center">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                      provident vitae! Magni
+                      tempora perferendis eum non provident.
+                    </p>-->
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-box">
+                  <div class="service-ico">
+                    <span class="ico-circle"><i class="icon ion-heart"></i></span>
+                  </div>
+                  <div class="service-content">
+                    <h2 class="s-title">Daily Health</h2>
+                   <!-- <p class="s-description text-center">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                      provident vitae! Magni
+                      tempora perferendis eum non provident.
+                    </p>-->
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-box">
+                  <div class="service-ico">
+                    <span class="ico-circle"><i class="icon ion-medkit"></i></span>
+                  </div>
+                  <div class="service-content">
+                    <h2 class="s-title">Home Treatment</h2>
+                   <!-- <p class="s-description text-center">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                      provident vitae! Magni
+                      tempora perferendis eum non provident.
+                    </p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-box">
+                  <div class="service-ico">
+                    <span class="ico-circle"><i class="icon ion-cloud"></i></span>
+                  </div>
+                  <div class="service-content">
+                    <h2 class="s-title">Cloud Medication</h2>
+                 <!--   <p class="s-description text-center">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                      provident vitae! Magni
+                      tempora perferendis eum non provident.
+                    </p>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--=======home-4 start from here==========-->
+        <!--=====
+            ==home page-4 contai the about us page.
+        ====-->
+
+        <div class="home-4" style="background-image: url({%static "images/about.jpg"%}); background-size: cover; background-position: center center;">
+
+            <h1>Developed By</h1>
+            <hr>
+            <p>Web Developer</p>
+
+            <div class="about_con">
+                <div class="dev">
+                    <img src="{%static "images/us/rahat.jpg"%}" alt="">
+                    <h2>Rahat Islam Akash</h2>
+                    <p>Django Developer</p>
+                </div>
+
+
+                <div class="dev">
+                    <img src="{%static "images/us/nafiz1.jpg"%}" alt="">
+                    <h2>Nafiz Pervez</h2>
+                    <p>Full Stack Developer</p>
+                </div>
+
+
+            </div>
+
+
+
+        <div class="text-center" style="padding-top: 4%;">
+                    <div class="counter-ico">
+                        <span class="ico-circle"><i class="icon ion-quote" style="color: white"></i></span>
+                      </div>
+                      <h4 class=" font-weight-lighter" style="color: aliceblue; ">“The purpose of life is not to be happy. It is to be useful, to be honorable, 
+                          to be compassionate, to have it make some difference that you have lived and lived well.”</h4>
+                  </div>
+
+        </div>
+        </div>
+        <!--======home-4 ends here==============-->
+
+
+        <!--====fotter page start from here-->
+         <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class=" col-md-12">
+            <div class="footer-info">
+              <h3 class="display-2">LENUS</h3>
+              <h3 class="font-weight-lighter">
+                Residential Area <br>
+                Uttara, Dhaka<br><br>
+                <strong>Phone:</strong> +880 1977 796595<br>
+                <strong>Email:</strong> info@lenusbd.com<br>
+              </h3>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          
+
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>LENUS</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        
+        Designed by Nafiz Pervez, Rahat Islam Akash
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+        <!--===fotter page ends here=========-->
+
+    </div>
+
+<!--elfsight widget api-->
+
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-0ff44ce9-d92a-4227-90c7-ba7e0d0aeeb1"></div>
+
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-beb30ad0-0542-489b-8aa7-80e657aae8dc"></div>
+
+
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-750e43ca-ec0d-4050-ae53-c79c68915bf0"></div>
+<!--elfsight widget api end-->
+
+
+    <!--====home page end here==========-->
+
+
+    <script src="{%static "js/jquery-3.5.1.min.js"%}"></script>
+    <script src="{% static "js/parallax.js"%}"></script>
+    <script src="{% static "js/wow.js"%}"></script>
+    <script src="{% static "js/maindevnaf.js"%}"></script>
+    
+
+    <script src="{% static "assets1/vendor/jquery/jquery.min.js"%}"></script>
+    <script src="{% static "assets1/vendor/bootstrap/js/bootstrap.bundle.min.js"%}"></script>
+    <script src="{% static "assets1/vendor/jquery.easing/jquery.easing.min.js"%}"></script>
+    <script src="{% static "assets1/vendor/php-email-form/validate.js"%}"></script>
+    <script src="{% static "assets1/vendor/waypoints/jquery.waypoints.min.js"%}"></script>
+    <script src="{% static "assets1/vendor/counterup/jquery.counterup.min.js"%}"></script>
+    <script src="{% static "assets1/vendor/owl.carousel/owl.carousel.min.js"%}"></script>
+    <script src="{% static "assets1/vendor/typed.js/typed.min.js"%}"></script>
+    <script src="{% static "assets1/vendor/venobox/venobox.min.js"%}"></script>
+    <script src="{% static "assets1/js/main.js"%}"></script>
+   
+    
+    <script>
+
+
+
+
+
+
+
+
+
+        new WOW().init();
+
+        $(home-2).parallax('100%', )
+
+        $(home-4).parallax('100%',)
+
+
+    </script>
+</body>
+</html>

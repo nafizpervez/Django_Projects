@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="{%static "css/bootstrap.min.css"%}">
+    <link rel="stylesheet" href="{%static "css/profile.css"%}">
+</head>
+<body>
+
+    <!--=====profile page start from here=============-->
+
+    <div class="container-fluid" style="background-color: #05386b">
+
+        <div class="profile">
+            <div class="blar">
+
+                                <!---===menu start from here=======-->
+                                <div class="menu">
+                                    <div class="row">
+                                        <!--===logo part start from here====-->
+                                        <div class="col-lg-2">
+                                            <h1 data-wow-duration="4s" class="wow tada">LENUS</h1>
+                                        </div>
+
+                                        <div class="col-lg-8">
+                                            <ul class="nav justify-content-end py-3">
+                                                <li class="nav-item"><a  class="nav-link" href="#">Home</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+                                                <li class ="nav-item"><a class="nav-link" href="#">Services</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                                            </ul>
+                                        </div>
+                                        <!--===logo part end here=====-->
+                                    </div>
+
+                                </div>
+
+
+
+                                <!--===profile left side contant design ends here====-->
+
+                                <!--===profuile right  contant design start from here===-->
+                                <div class="pro_right">
+
+                                    <div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-xl-9 mx-auto">
+        <div class="card card-signin flex-row my-5">
+            <div class="card-img-left d-none d-md-flex">
+                <!-- Background image for card set in CSS! -->
+            </div>
+
+
+            <div class="card-body">
+
+                <div class="container">
+                    <h5 class="card-title text-center">Change Profile Picture</h5>
+                    <form method="POST" enctype="multipart/form-data">
+                      {% csrf_token %}
+                      {% load crispy_forms_tags %}
+                      {{form|crispy}}
+
+                      <button type="submit" class="btn btn-warning btn-sm">Change</button>
+                    </form>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+                                </div>
+                                <!--===profile right contant design end from here  -->
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/wow.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,315 @@
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+}
+/*=====home-1 start from here=======*/
+.container-fluid .home-1{
+    width: 100%;
+    height: 100vh;
+    background-color: #caf0f8;
+}
+
+/*===menu bar design start from here========*/
+
+.container-fluid .home-1 .menu{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border-bottom: 3px solid orangered;
+}
+
+.container-fluid .home-1 .menu .col-lg-2 h1{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+.container-fluid .home-1 .menu .col-lg-8 ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.container-fluid .home-1 .menu .col-lg-8 ul li a:hover{
+    border-bottom: 1px solid orangered;
+}
+
+/*===menu design ends here=====*/
+
+.container-fluid .home-1 .home-con{
+    width: 80%;
+    height: 600px;
+    margin:30px auto;
+    padding: 20px;
+    
+    border: 1px solid orangered;
+    border-radius: 5px;
+}
+
+.container-fluid .home-1 .home-con h1{
+    color: white;
+    padding: 20px;
+}
+
+
+.container-fluid .home-1 .home-con hr{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid white;
+    width: 350px;
+}
+
+
+.container-fluid .home-1 .home-con p{
+    font-size: 20px;
+    text-align: justify;
+    padding: 50px 0px;
+    color: white;
+}
+
+.container-fluid .home-1 .home-con button{
+    text-align: center;
+    padding: 20px;
+    margin:auto;
+}
+
+
+.container-fluid .home-1 .home-con .row .col-lg-6 #banner {
+    width: 450px;
+    height: 400px;
+    background-image: url({%static "images/banner/img1.png"%});
+    background-size: cover;
+    background-position: center center;
+    
+
+    margin:50px auto;
+    box-sizing: border-box;
+
+    position: absolute;
+    animation: bann 20s;
+    -o-animation-delay: 3s;
+    animation-iteration-count: 4;
+    transition: 2s;
+
+    
+}
+
+/*-----animation part start from here------*/
+
+@keyframes bann{
+
+    0%{
+        background-image: url({%static "images/banner/img1.png"%});
+
+    }
+    25%{
+
+        background-image: url(images/banner/img2.jpg);
+    }
+    50%{
+
+        background-image: url(images/banner/img3.jpg);
+    }
+    75%{
+
+        background-image: url(images/banner/img4.jpg);
+
+    }
+    100%{
+        background-image: url(images/banner/img1.png);
+
+    }
+}
+
+/*animation part ends here------*/
+
+
+/*=====home-1 design part end here======*/
+
+
+
+/*=====home-2 design strt form here=======*/
+/*
+* servcise page descriptions.
+* service contant.
+
+
+*/
+
+.container-fluid .home-2{
+    width: 100%;
+    height: 100vh;
+    background-image: url({%static "../images/img5.jpg"%});
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.container-fluid .home-2 .blar{
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+
+.container-fluid .home-2 .home-2-contant{
+    width: 70%;
+    height: 600px;
+    margin:auto;
+    
+}
+
+.container-fluid .home-2 .home-2-contant .row .col-3{
+    height: 200px;
+    
+    border: 2px solid white;
+    padding: 10px;
+    margin: auto;
+    
+}
+/*========hover effect for all the service pages==========*/
+.container-fluid .home-2 .home-2-contant .row .col-3:hover{
+    width: 350px;
+    height: 250px;
+    
+
+}
+
+.container-fluid .home-2 .home-2-contant .row .col-3 a{
+    display: block;
+    color: white;
+    width:200px;
+    padding: 10px 20px;
+    margin:50px auto;
+    text-decoration: none; 
+    background-color: #3500D3;
+    font-size: 20px;
+    border:1px solid black;
+    text-align: center;
+    border-radius:5px;
+
+
+}
+/*=========hover effect for the a tag===========*/
+.container-fluid .home-2 .home-2-contant .row .col-3 a:hover{
+
+    width: 250px;
+    padding: 20px 30px;
+    background-color: #66FCF1;
+    color: black;
+
+}
+
+
+.container-fluid .home-2 h1{
+    color:skyblue;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 60px;
+}
+
+.container-fluid .home-2 hr{
+    width: 400px;
+    margin: 20px auto;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 5px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+/*=====home-3 design start from here========*/
+.container-fluid .home-3{
+    width: 100%;
+    height: 600px;
+    background-color: #222f3e;
+}
+
+.container-fluid .blar{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+/*===home-3 design ends here=========*/
+
+
+/*=====home page 4 design start from here=====*/
+/*====
+About us page design start from here
+====*/
+.container-fluid .home-4{
+    width: 100%;
+    height: 100vh;
+    background-color: #feffff;
+    
+    background-attachment: fixed;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container-fluid .home-4 h1{
+    margin-top: 50px;
+    color: white;
+}
+
+.container-fluid .home-4 hr{
+    width: 500px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid orangered;
+    margin:auto;
+}
+
+.container-fluid .home-4 p{
+    margin-top: 20px;
+    color: white;
+}
+
+.container-fluid .home-4 .about_con{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.container-fluid .home-4 .about_con .dev{
+    width:400px;
+    display:inline-block;
+    margin: 40px auto;
+    text-align: center;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.container-fluid .home-4 .about_con .dev img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.container-fluid .home-4 .about_con .dev h2{
+    margin-top: 20px;
+    color: white;
+}
+/*====home page 4 ends here=========*/
+
+
+/*====fotter part start from here======*/
+
+.container-fluid .fotter{
+    height: 300px;
+    background-color: whitesmoke;
+}
+
+/*====fotter part ends here========*/

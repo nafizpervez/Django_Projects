@@ -1,0 +1,777 @@
+/* 04. blog details css here */
+.blog_details_top {
+    margin-bottom: 118px;
+    @media #{$tablet-device}{
+        margin-bottom: 80px;
+    }
+    @media #{$large-mobile}{
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+}
+.blog_d_sticky{
+    margin-bottom: 142px;
+    @media #{$tablet-device}{
+        margin-bottom: 80px;
+    }
+    @media #{$large-mobile}{
+        margin-bottom: 70px;
+    }
+}
+.blog__author{
+    width: 205px;
+    @media #{$large-mobile}{
+       width: 100%;
+       text-align: center;
+       margin-bottom: 53px;
+    }
+}
+.blog_author_thumb{
+    margin-bottom: 25px;
+}
+.blog_author_name{
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 44px;
+    margin-bottom: 46px;
+    @media #{$large-mobile}{
+        padding-bottom: 21px;
+        margin-bottom: 23px;
+    }
+    & h3{
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 600;
+        margin-bottom: 0;
+        & a{
+            &:hover{
+                color: $secondary_color2;
+            }
+        }
+    }
+    & span{
+        font-size: 14px;
+        line-height: 24px;
+        color: #999999;
+        
+    }
+}
+.blog_author_details{
+    & ul{
+        & li{
+            font-size: 14px;
+            line-height: 30px;
+            color: #666666;
+            font-weight: 600;
+            margin-bottom: 7px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            & i{
+                font-size: 18px;
+                color: #cccccc;
+                margin-right: 8px;
+            }
+        }
+    }
+}
+.blog_details_sidebar{
+    width: calc(100% - 205px);
+    padding-left: 100px;
+    @media #{$desktop-device}{
+        padding-left: 50px;
+    }
+    @media #{$tablet-device}{
+        padding-left: 35px;
+    }
+    @media #{$large-mobile}{
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+}
+.blog_d_meta{
+    margin-bottom: 45px;
+    @media #{$desktop-device}{
+        margin-bottom: 23px;
+    }
+    @media #{$tablet-device}{
+        margin-bottom: 22px;
+    }
+    @media #{$large-mobile}{
+        margin-bottom: 17px;
+    }
+    & ul{
+        & li{
+            display: inline-block;
+            color: #999999;
+            font-size: 16px;
+            margin-right: 3px;
+            &:last-child{
+                margin-right: 0;
+            }
+            & a{
+                font-size: 14px;
+                line-height: 20px;
+                display: inline-block;
+                &:hover{
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+
+.blog_details_title{
+    margin-bottom: 67px;
+    @media #{$desktop-device}{
+        margin-bottom: 33px;
+    }
+    @media #{$tablet-device}{
+        margin-bottom: 28px;
+    }
+    @media #{$large-mobile}{
+        margin-bottom: 19px;
+    }
+   & h2{
+       font-size: 48px;
+       line-height: 60px;
+       font-weight: 700;
+       color: $secondary_color;
+       font-family: $dmsans;
+       @media #{$laptop-device}{
+        font-size: 42px;
+        line-height: 55px;
+       }
+       @media #{$desktop-device}{
+        font-size: 35px;
+        line-height: 50px;
+    }
+    @media #{$tablet-device}{
+        font-size: 30px;
+        line-height: 42px;
+    }
+    @media #{$large-mobile}{
+        font-size: 26px;
+        line-height: 38px;
+    }
+   }
+}
+
+.blog_details_desc{
+   & h3{
+       font-size: 30px;
+       line-height: 48px;
+       font-family: $dmsans;
+       margin-bottom: 58px;
+       @media #{$laptop-device}{
+        font-size: 27px;
+        line-height: 44px;
+       }
+       @media #{$desktop-device}{
+        font-size: 24px;
+        line-height: 39px;
+        margin-bottom: 32px;
+        }
+        @media #{$tablet-device}{
+            font-size: 22px;
+            line-height: 36px;
+            margin-bottom: 32px;
+        }
+        @media #{$large-mobile}{
+            font-size: 20px;
+            line-height: 32px;
+            margin-bottom: 18px;
+        }
+    }
+    & p{
+        font-size: 16px;
+        line-height: 30px;
+        color: #666666;
+        margin-bottom: 0;
+        @media #{$large-mobile}{
+            line-height: 28px;
+        }
+    }
+    & ul{
+        padding: 33px 0 65px;
+        @media #{$desktop-device}{
+            padding: 33px 0 45px;
+        }
+        @media #{$tablet-device}{
+            padding: 25px 0 33px;
+        }
+        @media #{$large-mobile}{
+            padding: 21px 0 22px;
+        }
+        & li{
+            font-size: 16px;
+            line-height: 36px;
+            color: #666666;
+            position: relative;
+            padding-left: 33px;
+            &::before{
+                position: absolute;
+                content: "";
+                width: 8px;
+                height: 8px;
+                background: #666666;
+                border-radius: 50%;
+                left: 0;
+                top: 50%;
+                transform: translatey(-50%);
+                @media #{$large-mobile}{
+                    display: none;
+                }
+            }
+            @media #{$tablet-device}{
+                line-height: 33px;
+            }
+            @media #{$large-mobile}{
+                padding-left: 0;
+            }
+        }
+    }
+    & h4{
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 600;
+        margin-bottom: 32px;
+        @media #{$desktop-device}{
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        @media #{$large-mobile}{
+            font-size: 20px;
+            line-height: 25px;
+            margin-bottom: 18px;
+        }
+    }
+    &.mb-85{
+        @media #{$desktop-device}{
+            margin-bottom: 50px;
+        }
+        @media #{$tablet-device}{
+            margin-bottom: 30px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.blog_details_blockquote{
+    padding: 70px 0 72px;
+    @media #{$desktop-device}{
+        padding: 38px 0 37px;
+    }
+    @media #{$tablet-device}{
+        padding: 26px 0 25px;
+    }
+    @media #{$large-mobile}{
+        padding: 27px 0 24px;
+    }
+    & blockquote{
+        padding-left: 100px;
+        margin: 0;
+        position: relative;
+        @media #{$tablet-device}{
+            padding-left: 47px;
+        }
+        @media #{$large-mobile}{
+            padding-left: 32px;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            width: 1px ;
+            background: $secondary_color2;
+            height: 88px;
+            top: 5px;
+            left: 0;
+        }
+        & h4{
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 32px;
+            font-weight: 400;
+            font-family: $dmsans;
+            @media #{$tablet-device}{
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+            @media #{$large-mobile}{
+                font-size: 17px;
+                line-height: 28px;
+                margin-bottom: 14px;
+            }
+
+        }
+        & p{
+            font-size: 16px;
+            line-height: 28px;
+            color: #666666;
+            & a{
+                color: #000000;
+                font-weight: 600;
+                &:hover{
+                    color: $secondary_color;
+                }
+            }
+            @media #{$large-mobile}{
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+.post_tags {
+   margin-bottom: 22px;
+   @media #{$large-mobile}{
+       justify-content: center;
+    }
+    & span{
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-right: 5px;
+    }
+    & ul{
+        & li{
+            margin-right: 5px;
+            &:last-child{
+                margin-right: 0;
+            }
+            & a{
+               font-size: 14px;
+               line-height: 30px;
+               color: #666666;
+               display: inline-block; 
+               &:hover{
+                    color: $secondary_color;
+                }
+                
+            }
+        }
+    }
+}
+
+.post__social{
+    & ul{
+        @media #{$large-mobile}{
+            justify-content: center;
+         }
+        & li{
+            margin-right: 12px;
+            &:last-child{
+                margin-right: 0;
+            }
+            @media #{$large-mobile}{
+                margin-right: 10px;
+            }
+            & a{
+                font-size: 24px;
+                line-height: 46px;
+                width: 46px;
+                height: 46px;
+                color: #ffffff;
+                border-radius: 3px;
+                display: inline-block;
+                text-align: center;
+                &.facebook{
+                    background: #1b4e9b;
+                }
+                &.twitter{
+                    background: #00aeef;
+                }
+                &.googleplus{
+                    background: #cc0000;
+                }
+                &.wifi{
+                    background: #f86a02;
+                }
+                @media #{$large-mobile}{
+                    font-size: 20px;
+                    line-height: 40px;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+.related_post_area {
+    padding: 120px 0;
+    @media #{$tablet-device}{
+        padding: 77px 0 47px;
+    }
+    @media #{$large-mobile}{
+        padding: 67px 0 37px;
+    }
+}
+.related_title{
+    margin-bottom: 64px;
+    text-align: center;
+    @media #{$desktop-device}{
+        margin-bottom: 45px;
+    }
+    @media #{$tablet-device}{
+        margin-bottom: 35px;
+    }
+    @media #{$large-mobile}{
+        margin-bottom: 28px;
+    }
+    & h2{
+        font-size: 30px;
+        line-height: 30px;
+        text-transform: capitalize;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        color: #304650;
+        @media #{$desktop-device}{
+            font-size: 28px;
+        }
+        @media #{$tablet-device}{
+            font-size: 24px;
+            line-height: 25px;
+        }
+        @media #{$large-mobile}{
+            font-size: 22px;
+            line-height: 24px;
+        }
+    }
+}
+
+.related_thumb{
+    overflow: hidden;
+    & img{
+        transition: .3s;
+        width: 100%;
+    }
+    &:hover{
+        & img{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.related_post_text{
+    padding-top: 23px;
+    @media #{$desktop-device}{
+        padding-top: 22px;
+    }
+    @media #{$tablet-device}{
+        padding-top: 20px;
+    }
+    @media #{$large-mobile}{
+        padding-top: 17px;
+    }
+    & p{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 8px;
+        display: inline-block;
+        & span{
+            color: #999999;
+        }
+        @media #{$desktop-device}{
+            font-size: 13px;
+            line-height: 18px;
+            margin-bottom: 10px;
+        }
+        @media #{$tablet-device}{
+            font-size: 13px;
+            line-height: 18px;
+            margin-bottom: 9px;
+        }
+        @media #{$large-mobile}{
+            font-size: 13px;
+            line-height: 18px;
+            margin-bottom: 8px;
+        }
+    }
+    & h3{
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 700;
+        font-family: $dmsans;
+        margin-bottom: 0;
+        & a{
+            &:hover{
+                color: $secondary_color2;
+            }
+        }
+        @media #{$desktop-device}{
+            font-size: 20px;
+            line-height: 30px;
+        }
+        @media #{$tablet-device}{
+            font-size: 20px;
+            line-height: 30px;
+        }
+        @media #{$large-mobile}{
+            font-size: 17px;
+            line-height: 26px;
+        }
+    }
+}
+.single_related_post{
+    @media #{$tablet-device}{
+        margin-bottom: 30px;
+    }
+    @media #{$large-mobile}{
+        margin-bottom: 30px;
+    }
+}
+
+.blog_comment_wrapper{
+    background: #f2f5fa;
+    padding: 121px 0 195px;
+    & .container{
+        max-width: 805px;
+    }
+    @media #{$tablet-device}{
+        padding: 76px 0 80px;
+    }
+    @media #{$large-mobile}{
+        padding: 65px 0 70px;
+    }
+}
+.comments_box{
+    margin-bottom: 80px;
+    @media #{$tablet-device}{
+        margin-bottom: 71px;
+    }
+    @media #{$large-mobile}{
+        margin-bottom: 56px;
+    }
+    
+}
+
+.comments_title{
+    margin-bottom: 34px;
+    @media #{$large-mobile}{
+        margin-bottom: 30px;
+    }
+    @media #{$small-mobile2}{
+       text-align: center;
+    }
+    & h2{
+        font-size: 30px;
+        line-height: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #304650;
+        margin-bottom: 0;
+        @media #{$desktop-device}{
+            font-size: 24px;
+            line-height: 40px;
+        }
+        @media #{$tablet-device}{
+            font-size: 24px;
+            line-height: 25px;
+        }
+        @media #{$large-mobile}{
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+}
+
+.comment_list{
+    overflow: hidden;
+    margin-bottom: 33px;
+    @media #{$small-mobile2}{
+        flex-direction: column;
+    }
+    &:last-child{
+        margin-bottom: 0;
+    }
+    & .comment_thumb{
+        width: 70px;
+        margin-right: 30px;
+        @media#{$large-mobile}{
+           margin-right: 20px;
+        }
+        @media #{$small-mobile2}{
+            margin: 0 auto 20px;
+        }
+        & img{
+            border-radius: 50%;
+        }
+    }
+    & .comment_meta {
+        margin-bottom: 11px;
+        @media #{$small-mobile2}{
+            flex-direction: column;
+        }
+    }
+    & .comment_content{
+        width: calc(100% - 70px);
+        padding: 20px 0 0 20px;
+        @media #{$small-mobile2}{
+            flex-direction: column;
+            width: 100%;
+            margin-top: 20px;
+            padding: 20px 17px 24px;
+            text-align: center;
+        } 
+        & h5{
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 700;
+            text-transform: capitalize; 
+            margin-bottom: 9px;
+            color: #333333;
+            font-family: $dmsans;
+            @media #{$large-mobile}{
+               font-size: 16px;
+                line-height: 20px;
+            }
+            @media #{$small-mobile2}{
+                margin-bottom: 8px;
+            }
+            & span{
+                font-size: 14px;
+                color: #666666;
+                font-weight: 400;
+            }
+        }
+        & p{
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 0;
+        }
+        & a{
+            font-size: 13px;
+            line-height: 18px;
+            font-weight: 600;
+            margin-top: 27px;
+            display: inline-block;
+            text-transform: uppercase;
+            &:hover{
+                color: #da4326;
+            }
+        }
+    }
+}
+
+
+.comments_form{
+    & .section_title{
+        margin-bottom: 44px;
+        @media #{$large-mobile}{
+            margin-bottom: 30px;
+        }
+        @media #{$small-mobile2}{
+            text-align: center;
+        }
+        & h2{
+            font-size: 24px;
+            line-height: 26px;
+            font-weight: 600;
+            @media #{$large-mobile}{
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+.comments_form_input{
+    margin-bottom: 30px;
+    & label{
+        font-size: 14px;
+        line-height: 26px;
+        color: #999999;
+        display: block;
+        margin-bottom: 4px;
+        @media #{$large-mobile}{
+            font-size: 13px;
+            line-height: 17px;
+        }
+        & span{
+            color: #ff3366;
+        }
+    }
+    & input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #999999;
+    }
+    & input::-moz-placeholder { /* Firefox 19+ */
+        color: #999999;
+    }
+    & input:-ms-input-placeholder { /* IE 10+ */
+        color: #999999;
+    }
+    & input:-moz-placeholder { /* Firefox 18- */
+        color: #999999;
+    }
+    & input{
+        color: #999999;
+        width: 100%;
+        height: 52px;
+        font-size: 16px;
+        padding: 0 20px;
+        border-radius: 8px;
+        &:focus
+{
+            color: #000000;
+        } 
+        &:focus::-webkit-input-placeholder{
+            color: #000000;
+        } 
+        @media #{$tablet-device}{
+            width: 100%;
+        }
+        @media #{$large-mobile}{
+            width: 100%;
+        }
+    }
+    & textarea{
+        width: 100%;
+        padding: 10px;
+        height: 210px;
+        font-size: 16px;
+        color: #999999;
+        padding: 20px;
+        border-radius: 8px;
+        resize: none;
+        &:focus
+{
+
+            color: #000000;
+        } 
+        &:focus::-webkit-input-placeholder{
+            color: #000000;
+        }
+        @media #{$tablet-device}{
+            height: 180px;
+        }
+        @media #{$large-mobile}{
+            height: 100px;
+        }
+        @media #{$small-mobile2}{
+            height: 70px;
+        }
+    }
+
+    
+}
+
+.comments_form_inner{
+    & button.btn.btn-link{
+        margin-top: 24px;
+        @media #{$tablet-device}{
+            margin-top: 15px;
+        }
+        @media #{$large-mobile}{
+            margin-top: 0;
+        }
+    }
+}
+/*blog details css end*/
+
+
+

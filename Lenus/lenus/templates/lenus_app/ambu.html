@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+{%load static %}
+<html>
+  <head>
+    <title>Ambulance</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="{%static "images/apple-touch-icon.png"%}">
+<link rel="icon" type="image/png" sizes="32x32" href="{%static "images/favicon-32x32.png"%}">
+<link rel="icon" type="image/png" sizes="16x16" href="{%static "images/favicon-16x16.png"%}">
+<link rel="manifest" href="{%static "images/site.webmanifest"%}">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+     <script src="https://kit.fontawesome.com/367bd48960.js" crossorigin="anonymous"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+
+
+
+
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <style type="text/css">
+
+
+
+
+
+
+
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 80%;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      #description {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      #infowindow-content .title {
+        font-weight: bold;
+      }
+
+      #infowindow-content {
+        display: none;
+      }
+
+      #map #infowindow-content {
+        display: inline;
+      }
+
+      .pac-card {
+        margin: 20px 30px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        font-family: Roboto;
+      }
+
+      #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+      }
+
+      .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+      }
+
+      .pac-controls label {
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-top : 20px;
+        
+        margin-left: 10px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 300px;
+       
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      #title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+      }
+
+      #target {
+        width: 345px;
+      }
+
+
+    /*footer*/
+.col_white_amrc { color:#FFF;}
+footer { width:100%; background-color:#263238; min-height:250px; padding:10px 0px 25px 0px ;}
+.pt2 { padding-top:40px ; margin-bottom:20px ;}
+footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
+.mb10 { padding-bottom:15px ;}
+.footer_ul_amrc { margin:0px ; list-style-type:none ; font-size:14px; padding:0px 0px 10px 0px ; }
+.footer_ul_amrc li {padding:0px 0px 5px 0px;}
+.footer_ul_amrc li a{ color:#CCC;}
+.footer_ul_amrc li a:hover{ color:#fff; text-decoration:none;}
+.fleft { float:left;}
+.padding-right { padding-right:10px; }
+
+.footer_ul2_amrc {margin:0px; list-style-type:none; padding:0px;}
+.footer_ul2_amrc li p { display:table; }
+.footer_ul2_amrc li a:hover { text-decoration:none;}
+.footer_ul2_amrc li i { margin-top:5px;}
+
+.bottom_border { border-bottom:1px solid #323f45; padding-bottom:20px;}
+.foote_bottom_ul_amrc {
+	list-style-type:none;
+	padding:0px;
+	display:table;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+.foote_bottom_ul_amrc li { display:inline;}
+.foote_bottom_ul_amrc li a { color:#999; margin:0 12px;}
+
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+
+
+    </style>
+    <script>
+      // This example adds a search box to a map, using the Google Place Autocomplete
+      // feature. People can enter geographical searches. The search box will return a
+      // pick list containing a mix of places and predicted search terms.
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+      function initAutocomplete() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 23.8759, lng: 90.3795 },
+          zoom: 15,
+          mapTypeId: "roadmap",
+        });
+        // Create the search box and link it to the UI element.
+        const input = document.getElementById("pac-input");
+        const searchBox = new google.maps.places.SearchBox(input);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener("bounds_changed", () => {
+          searchBox.setBounds(map.getBounds());
+        });
+        let markers = [];
+        // Listen for the event fired when the user selects a prediction and retrieve
+        // more details for that place.
+        searchBox.addListener("places_changed", () => {
+          const places = searchBox.getPlaces();
+
+          if (places.length == 0) {
+            return;
+          }
+          // Clear out the old markers.
+          markers.forEach((marker) => {
+            marker.setMap(null);
+          });
+          markers = [];
+          // For each place, get the icon, name and location.
+          const bounds = new google.maps.LatLngBounds();
+          places.forEach((place) => {
+            if (!place.geometry || !place.geometry.location) {
+              console.log("Returned place contains no geometry");
+              return;
+            }
+            const icon = {
+              url: place.icon,
+              size: new google.maps.Size(71, 71),
+              origin: new google.maps.Point(0, 0),
+              anchor: new google.maps.Point(17, 34),
+              scaledSize: new google.maps.Size(25, 25),
+            };
+            // Create a marker for each place.
+            markers.push(
+              new google.maps.Marker({
+                map,
+                icon,
+                title: place.name,
+                position: place.geometry.location,
+              })
+            );
+
+            if (place.geometry.viewport) {
+              // Only geocodes have viewport.
+              bounds.union(place.geometry.viewport);
+            } else {
+              bounds.extend(place.geometry.location);
+            }
+          });
+          map.fitBounds(bounds);
+        });
+      }
+    </script>
+  </head>
+  <body style="padding: 0px;">
+
+                          
+
+    
+
+                                
+                            <div class="col-lg-12" >
+                                <ul class="nav justify-content-end text-center py-3" style="color: white">
+                                    <li class="nav-item"><a style="color:orangered;font-weight: bolder;" class="nav-link" href="/index">LENUS</a></li>
+                                    <li class="nav-item"><a style="color:orangered;font-weight: bolder;" class="nav-link" href="/index">Home</a></li>
+                                    <li class="nav-item"><a style="color:orangered;font-weight: bolder;" class="nav-link" href="/profile">Profile</a></li>
+                                    <li class ="nav-item"><a style="color:orangered;font-weight: bolder;" class="nav-link" href="/services">Services</a></li>
+                                    <li class="nav-item"><a style="color:orangered;font-weight: bolder;" class="nav-link" href="/contact">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        <!--===logo part end here=====-->
+                    </div>
+                                                    
+                </div>
+
+
+
+
+  
+ 
+  
+  <input
+      id="pac-input"
+      class="controls"
+      type="text"
+      placeholder="Search Hospitals & Places by Name"
+    />
+    <div id="map"></div>
+
+ 
+
+  <div class="card text-center">
+  <div class="card-footer text-muted">
+     <div class="copyright">
+        &copy; Copyright <strong><span>LENUS</span></strong>. All Rights Reserved
+      </div> 
+  </div>
+
+  <div class="card-body">
+    <h5 class="card-title">Find Hospitals and Ambulance Services</h5>
+    <p class="card-text">For your benefits, a list of covid treatment hospitals are given below, you can search by that names too.</p>
+    
+  </div>
+  <div class="card-footer text-muted">
+    <i class="icofont-simple-smile"></i> STAY WELL <i class="icofont-simple-smile"></i> 
+  </div>
+</div>
+
+
+
+
+
+
+	<!-- Information and meeting -->
+<br><br>
+<br><br>
+<div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                List of COVID-19 Hospitals
+              </h3>
+				<div class="line-mf"></div>
+				<br><br>
+        <div class="card">
+          <div class="card-body">
+            Within the list you can also see the Hospitals which provied Ambulance Services.
+          </div>
+        </div>
+        <br><br>
+
+<div>
+<!--Table-->
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Hospitals</th>
+      <th scope="col">Location</th>
+      <th scope="col">Ambulance Service</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Evercare Hospital</td>
+      <td>Dhaka</td>
+      <td>Available</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Square Hospital</td>
+      <td>Dhaka</td>
+      <td>Available</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>IBN SINA Medical College Hospital</td>
+      <td>Dhaka</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">4</th>
+      <td>Anwar Khan Modern Medical College Hospital</td>
+      <td>Dhaka</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">5</th>
+      <td>Enam Medical College Hospital</td>
+      <td>Dhaka</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">6</th>
+      <td>United Hospital Limited</td>
+      <td>Dhaka</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">7</th>
+      <td>Lab Aid Hospital</td>
+      <td>Dhaka</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">8</th>
+      <td>Aichi Hospital Limited</td>
+      <td>Dhaka</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">9</th>
+      <td>Zainul Haque Sikder Women's Medical College & Hospital</td>
+      <td>Dhaka</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">10</th>
+      <td>AMZ Hospital Limited</td>
+      <td>Dhaka</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">11</th>
+      <td>Universal Medical College & Hospital</td>
+      <td>Dhaka</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">12</th>
+      <td>Ahsania Mission Cancer & General Hospital</td>
+      <td>Dhaka</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">13</th>
+      <td>Bangladesh Institute of Health Scineces General Hospital</td>
+      <td>Dhaka</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">14</th>
+      <td>Imperial Hospital Limited</td>
+      <td>Chattogram</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">15</th>
+      <td>Brahmanbaria Medical College Hospital</td>
+      <td>Brahmanbaria</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">16</th>
+      <td>TMSS Medical College & Rafatukkah Community Hospital</td>
+      <td>Bogura</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">17</th>
+      <td>Dr. Farida Huq Memorial Ibrahim General Hospital</td>
+      <td>Gazipur</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">18</th>
+      <td>International Medical College Hospital</td>
+      <td>Gazipur</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">19</th>
+      <td>Sheikh Fazilatunnesa Mujib Memorial KPJ Specialized Hospital</td>
+      <td>Gazipur</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">20</th>
+      <td>Praava Health Bangladesh Ltd.</td>
+      <td>Dhaka</td>
+      <td>Not Available</td>
+    </tr>
+     <tr>
+      <th scope="row">21</th>
+      <td>Biomed Diagnostics</td>
+      <td>Dhaka</td>
+      <td>Not Available</td>
+    </tr>
+     <tr>
+      <th scope="row">22</th>
+      <td>DMFR Molecular Lab & Diagnostics</td>
+      <td>Dhaka</td>
+      <td>Not Available</td>
+    </tr>
+     <tr>
+      <th scope="row">23</th>
+      <td>DNA Solution Limited</td>
+      <td>Dhaka</td>
+      <td>Not Available</td>
+    </tr>
+     <tr>
+      <th scope="row">24</th>
+      <td>CSBF Health center</td>
+      <td>Dhaka</td>
+      <td>Available</td>
+    </tr>
+     <tr>
+      <th scope="row">25</th>
+      <td>Dr Lal Path Labs Bangladesh Pvt. Ltd.</td>
+      <td>Dhaka</td>
+      <td>Not Available</td>
+    </tr>
+
+     <tr>
+      <th scope="row">26</th>
+      <td>The DNA Lab</td>
+      <td>Dhaka</td>
+      <td>Not Available</td>
+    </tr> <tr>
+      <th scope="row">27</th>
+      <td>Gulshan Clinic Limited</td>
+      <td>Dhaka</td>
+      <td>Not Available</td>
+    </tr>
+     <tr>
+      <th scope="row">28</th>
+      <td>Authentic Diagnostics @ Consultantaion Ltd.</td>
+      <td>Dhaka</td>
+      <td>Not Available</td>
+    </tr>
+     <tr>
+      <th scope="row">29</th>
+      <td>CRL Diagnostics</td>
+      <td>Dhaka</td>
+      <td>Not Available</td>
+    </tr>
+     <tr>
+      <th scope="row">30</th>
+      <td>ICDDR,B Molecular Diagnostic Laboratory</td>
+      <td>Dhaka</td>
+      <td>Not Available</td>
+    </tr>
+     <tr>
+      <th scope="row">31</th>
+      <td>Aalok Healthcare Ltd.</td>
+      <td>Dhaka</td>
+      <td>Available</td>
+    </tr>
+
+     <tr>
+      <th scope="row">32</th>
+      <td>Chevron Clinical Laboratory (PTE) Ltd.</td>
+      <td>Chattogram</td>
+      <td>Not Available</td>
+    </tr>
+     <tr>
+      <th scope="row">33</th>
+      <td>Gazi Covid-19 PCR LAB, Rupganj</td>
+      <td>Narayanganj</td>
+      <td>Available</td>
+    </tr>
+    <br>
+    <br>
+    
+
+
+
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<div class="row text-center">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">
+		  
+		  <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="fas fa-file-alt"></i></span>
+			  </div>
+			</div>
+		  
+		  </h5>
+        <p class="card-text">Tired of Scrolling, Download the file.</p>
+        <a class="btn btn-primary" id="downloadLink" href="{%static "covhospitalsbd.pdf"%}" target="_blank" 
+type="application/octet-stream" download="covhospitalsbd.pdf">Download PDF</a>
+ 	
+		</div>
+    </div>
+  </div>
+  
+				</div></div></div></div></div>
+
+<!--Infromation and meeting section end-->
+
+
+<br><br>
+
+
+    <!--Card start for other ambulance servce Options-->
+  <div class="row text-center">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">RENT SHEBA</h5>
+        <p class="card-text">RentSheba company provides Emergency Ambulance services all districts of Bangladesh.</p>
+        <p class="card-text"><i class="fas fa-phone-alt"></i> +880 1627 669222</p>
+        <a href="https://rentsheba.com/?gclid=Cj0KCQjw4cOEBhDMARIsAA3XDRgZyejTtFyGmUeXa5_
+        LcgCYEM79dlHF-i7fXMpHJ0meZatHZ6QUKXMaApooEALw_wcB" class="btn btn-primary">Book Service</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">ANISHA AMBULANCE</h5>
+        <p class="card-text">Their vision stresses that we want to be ut the ambulance provider people turn to their first choice not only for all their emergency needs</p>
+        <p class="card-text"><i class="fas fa-phone-alt"></i> +880 1919 594814</p>
+        <a href="https://anisha-ambulance.com/" class="btn btn-primary">Book Service</a>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<!--Card start for other ambulance servce Options ends-->
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1824.0914696591574!2d90.38844839815475!3d23.88313080890794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c46ca366545f%3A0xc2092827174186ff!2sD2D%20Sourcing%20Bangladesh!5e0!3m2!1sen!2sbd!4v1620128429362!5m2!1sen!2sbd" width="100%" height="450" style="border:10px;" allowfullscreen="" loading="lazy"></iframe><footer class="footer">
+<br>
+<br>
+<div class="container bottom_border">
+<div class="row">
+<div class=" col-md-12 text-center">
+<h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+<!--headin5_amrc-->
+<p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+<p><i class="fa fa-location-arrow"></i> Sector10, Uttara, DHaka 1230 </p>
+<p><i class="fa fa-phone"></i>  +880-1792855957  </p>
+<p><i class="fa fa fa-envelope"></i> info@lenusbd.com  </p>
+
+
+</div>
+
+
+
+
+
+
+
+<!--footer_ul2_amrc ends here-->
+
+</div>
+</div>
+
+
+
+<!--foote_bottom_ul_amrc ends here-->
+<p class="text-center">Copyright @2021 | Designed With  <a href="/index">LENUS</a></p>
+
+<ul class="social_footer_ul">
+<li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+
+</ul>
+<!--social_footer_ul ends here-->
+</div>
+
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgn4rRiR0Js0M-3u4-7VqKO9GcD-tvnbs&callback=initAutocomplete&libraries=places&v=weekly"
+      async
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     
+   
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-beb30ad0-0542-489b-8aa7-80e657aae8dc"></div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  </body>
+</html>

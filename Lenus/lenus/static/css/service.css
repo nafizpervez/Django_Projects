@@ -1,0 +1,397 @@
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+.container-fluid .service{
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px;
+}
+
+
+/*===menu bar design start from here========*/
+
+.container-fluid .service .blar .menu{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border-bottom: 3px solid orangered;
+}
+
+.container-fluid .service .blar{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.container-fluid .service .blar .menu .col-lg-2 h1{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.container-fluid .service .blar .menu .col-lg-8 ul li a{
+    color: white;
+    font-size: large;
+}
+
+.container-fluid .service .blar .menu .col-lg-8 ul li a:hover{
+    border-bottom: 1px solid white;
+   
+}
+
+/*===menu design ends here=====*/
+
+
+/*=====main body design start hfrom here=======*/
+
+.container-fluid .service{
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+.container-fluid .service .blar .ser_body{
+    width: 80%;
+    height: 600px;
+    margin:70px auto;
+    text-align: center;
+    
+}
+
+.container-fluid .service .blar .ser_body .con_1 {
+    width:32.00%;
+    height: 250px;
+    border: 1px solid red;
+    border-radius: 10px;
+    float: left;
+    margin: auto;
+    
+    transition: 2s;
+    position: relative;
+
+    
+}
+
+.container-fluid .service .blar .ser_body .con_1 h3{
+    color: orangered;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+    font-weight: bold;
+}
+
+
+.container-fluid .service .blar .ser_body .con_1 p{
+    color: orangered;
+    position: absolute;
+    font-weight: bold;
+    top: 130px;
+    right: 0px;
+    left: 0px;
+}
+
+
+.container-fluid .service .blar .ser_body .con_1 a{
+    color: white;
+    position: absolute;
+    bottom: -50px;
+    left:0px;
+    right: 0px;
+    text-decoration: none;
+    display: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: orangered;
+    
+    
+
+}
+
+/*==
+
+hover effect for the contant
+==*/
+
+.container-fluid .service .blar .ser_body .con_1:hover a{
+   
+ display: block;    
+ bottom: 0px;
+ 
+
+    
+}
+
+.container-fluid .service .blar .ser_body .con_1 a:hover{
+    background-color: green;
+}
+
+/*=====main body design part ends here=======*/
+
+
+
+
+
+/*====blood service page design start from here====*/
+/*
+blood donation srvice 
+
+*/
+
+
+.container-fluid .blood_con{
+    width: 500px;
+    height: 400px;
+    
+    margin-top: 50px;
+    text-align: justify;
+    
+
+}
+
+.container-fluid .blood_con h2{
+    color: white;
+}
+
+
+.container-fluid .blood{
+    width: 1200px;
+    height: 700px;
+    border: 1px solid white;
+    position: absolute;
+    right: 50px;
+    top: 150px;
+    overflow: auto;
+    
+}
+
+.container-fluid .blood table tr td{
+    border: 1px solid white;
+    width: 400px;
+    text-align: center;
+    color: white;
+}
+
+/*=====blood donation service ends here*/
+
+
+
+
+/*=====fire service page design start from here===*/
+/*=====
+    fire service page
+=====*/
+
+
+.container-fluid .fire{
+    width: 500px;
+    height: 400px;
+    
+    margin-top: 50px;
+    text-align: justify;
+    
+
+}
+
+.container-fluid .fire h2{
+    color: white;
+}
+
+
+.container-fluid .fire_con{
+    width: 1200px;
+    height: 700px;
+    border: 1px solid white;
+    position: absolute;
+    right: 50px;
+    top: 150px;
+    overflow: auto;
+    
+}
+
+.container-fluid .fire_con table tr td{
+    border: 1px solid white;
+    width: 400px;
+    text-align: center;
+    color: white;
+}
+
+
+/*======fire service page end here====*/
+
+
+/*======police service page start from here======*/
+/*=====
+police page
+=====*/
+.container-fluid .police{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    margin-top: 50px;
+    text-align: justify;
+    bottom: 100px;
+    left: 30px;
+    
+
+}
+
+.container-fluid .police h2{
+    color: white;
+}
+
+
+.container-fluid .police_con{
+    width: 1200px;
+    height: 700px;
+    border: 1px solid white;
+    position: absolute;
+    right: 50px;
+    top: 150px;
+    overflow: auto;
+    
+}
+
+.container-fluid .police_con table tr td{
+    border: 1px solid white;
+    width: 400px;
+    text-align: center;
+    color: white;
+}
+
+
+/* police contant design ends here*/
+
+/*
+**Volunteer servise start from here
+*/
+.container-fluid .vol_con{
+    width: 600px;
+    height: 400px;
+    border: 1px solid white;
+    margin-top: 50px;
+    text-align: justify;
+    position: absolute;
+    bottom: 100px;
+    left: 30px;
+    
+
+}
+
+.container-fluid .vol_con h2{
+    color: white;
+}
+
+
+.container-fluid .volunteer{
+    width: 1200px;
+    height: 700px;
+    border: 1px solid white;
+    position: absolute;
+    right: 50px;
+    top: 150px;
+    overflow: auto;
+    
+}
+
+.container-fluid .volunteer table tr td{
+    border: 1px solid white;
+    width: 400px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+
+/*volunteer page design ends here*/
+
+
+/*
+* physiotherapist page start from
+*/
+
+.container-fluid .phy_con{
+    width: 600px;
+    height: 400px;
+    border: 1px solid white;
+    margin-top: 50px;
+    text-align: justify;
+    position: absolute;
+    bottom: 100px;
+    left: 30px;
+    
+
+}
+
+.container-fluid .phy_con h2{
+    color: white;
+}
+
+
+.container-fluid .phy{
+    width: 1200px;
+    height: 700px;
+    border: 1px solid white;
+    position: absolute;
+    right: 50px;
+    top: 150px;
+    overflow: auto;
+    
+}
+
+.container-fluid .phy table tr td{
+    border: 1px solid white;
+    width: 400px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+/*physiotherapist page design part ends here*/
+
+
+
+/*
+* ambulance part start from here
+*/
+
+
+.container-fluid .ambu_con{
+    width: 600px;
+    height: 400px;
+    border: 1px solid white;
+    margin-top: 50px;
+    text-align: justify;
+    position: absolute;
+    bottom: 100px;
+    left: 30px;
+    
+
+}
+
+.container-fluid .ambu_con h2{
+    color: white;
+}
+
+
+.container-fluid .ambu{
+    width: 1200px;
+    height: 700px;
+    border: 1px solid white;
+    position: absolute;
+    right: 50px;
+    top: 150px;
+    overflow: auto;
+    
+}
+
+.container-fluid .ambu table tr td{
+    border: 1px solid white;
+    width: 400px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+}

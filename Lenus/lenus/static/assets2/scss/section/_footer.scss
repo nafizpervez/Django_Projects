@@ -1,0 +1,254 @@
+/*  06. footer css here */
+.footer_bg{
+    background: $secondary_color;
+} 
+.footer_top{
+    padding: 280px 0 290px;
+    @media #{$desktop-device}{
+        padding: 170px 0 170px;
+    }
+    @media #{$tablet-device}{
+        padding: 100px 0 100px;
+    }
+    @media #{$large-mobile}{
+        padding: 80px 0;
+    }
+} 
+.footer_chat_text {
+    & h3{
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+        color: #ffffff;
+        font-family: $dmsans;
+        margin-bottom: 22px;
+        @media #{$tablet-device}{
+            font-size: 20px;
+            line-height: 23px;
+            margin-bottom: 18px;
+        }
+        @media #{$large-mobile}{
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 15px;
+        }
+    }
+    & h1{
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 0;
+        & span{
+            font-size: 48px;
+            font-style: italic;
+            font-weight: 400;
+            border-bottom: 2px solid #ffffff;
+            line-height: 45px;
+            display: inline-block;
+            @media #{$tablet-device}{
+                font-size: 26px;
+                line-height: 30px;
+            }
+            @media #{$large-mobile}{
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+        @media #{$desktop-device}{
+            font-size: 40px;
+            line-height: 50px;
+        }
+        @media #{$tablet-device}{
+            font-size: 34px;
+            line-height: 35px;
+        }
+        @media #{$large-mobile}{
+            font-size: 28px;
+            line-height: 35px;
+        }
+    }
+}
+.footer_social {
+    & ul{
+        & li{
+            margin-right: 28px;
+            &:last-child{
+                margin-right: 0;
+            }
+            @media #{$desktop-device}{
+                margin-right: 15px;
+            }
+            & a{
+                font-size: 18px;
+                color: #ffffff;
+                &:hover{
+                    color: $secondary_color2;
+                }
+            }
+        }
+    }
+}
+
+.copyright_right{
+    @media #{$large-mobile}{
+        text-align: center;
+    }
+    & p{
+        font-size: 16px;
+        line-height: 20px;
+        color: #999999;
+        @media #{$desktop-device}{
+            font-size: 14px;
+        }
+        
+        & i{
+            font-size: 16px;
+            color: #f53400;
+            vertical-align: middle;
+            margin: 0 4px;
+        }
+        & a{
+            color: #ffffff;
+            &:hover{
+                color: $secondary_color2;
+            }
+        }
+    }
+}
+
+.footer_contact{
+    @media #{$tablet-device}{
+        padding: 20px 0;
+    }
+    @media #{$large-mobile}{
+        padding: 20px 0;
+    }
+    & ul{
+        @media #{$large-mobile}{
+            flex-direction: column;
+            align-items: center;
+        }
+        & li{
+            font-size: 16px;
+            line-height: 20px;
+            color: #ffffff;
+            margin-right: 34px;
+            @media #{$desktop-device}{
+                font-size: 14px;
+            }
+            @media #{$large-mobile}{
+                margin-bottom: 12px;
+                margin-right: 0;
+            }
+            &:last-child{
+                margin-right: 0;
+                @media #{$large-mobile}{
+                    margin-bottom: 0;
+                }
+            }
+            & a{
+                &:hover{
+                    color: $secondary_color2;
+                }
+            }
+        }
+    }
+}
+
+.footer_bottom {
+    padding: 0 105px 84px;
+    @media #{$laptop-device}{
+        padding: 0 30px 84px;
+    }
+    @media #{$desktop-device}{
+        padding: 0 0 50px;
+    }
+    @media #{$tablet-device}{
+        padding: 0 0 35px;
+        flex-direction: column;
+    }
+    @media #{$large-mobile}{
+        padding: 0 0 30px;
+        flex-direction: column;
+    }
+}
+
+.newsletter_subscribe{
+    & p{
+        font-size: 14px;
+        line-height: 30px;
+        color: #999999;
+        margin-bottom: 23px;
+        margin-top: 0;
+        @media #{$large-mobile}{
+            margin-bottom: 17px;
+        }
+    }
+    & form{
+        position: relative;
+        width: 272px;
+        @media #{$desktop-device}{
+            width: 240px;
+        }
+        @media #{$large-mobile}{
+            width: 100%;
+        }
+        & input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: #999999;
+        }
+        & input::-moz-placeholder { /* Firefox 19+ */
+            color: #999999;
+        }
+        & input:-ms-input-placeholder { /* IE 10+ */
+            color: #999999;
+        }
+        & input:-moz-placeholder { /* Firefox 18- */
+            color: #999999;
+        }
+        & input{
+            width: 100%;
+            height: 50px;
+            border: 0;
+            background: #333139;
+            font-size: 14px;
+            color: #999999;
+            padding: 0 45px 0 16px;
+            &:focus{
+                color: #ffffff;
+            }
+            &:focus::-webkit-input-placeholder{
+                color: #ffffff;
+            }
+        }
+        & button{
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            background: inherit;
+            color: #999999;
+            font-size: 24px;
+            padding: 0;
+            border: 0;
+            text-align: center;
+            transform: translatey(-50%);
+            &:hover{
+                color: #ffffff;
+            }
+
+        }
+    }
+}
+.mailchimp-error{
+    text-align: center;
+    color: #ffffff;
+}
+.mailchimp-success{
+    text-align: center;
+    color: #ffffff;
+    &.active{
+        padding-top: 10px;
+    }
+}
+
+

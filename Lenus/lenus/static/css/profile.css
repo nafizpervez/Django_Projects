@@ -1,0 +1,111 @@
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+    height:100vh;
+    width:100%;
+}
+
+
+/*===menu bar design start from here========*/
+
+.container-fluid .profile .blar .menu{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border-bottom: 3px solid skyblue;
+}
+
+.container-fluid .profile .blar .menu .col-lg-2 h1{
+    text-align: center;
+    margin-top: 10px;
+    color: skyblue;
+}
+
+.container-fluid .profile .blar .menu .col-lg-8 ul li a{
+    color: skyblue;
+    font-size: large;
+}
+
+.container-fluid .profile .blar .menu .col-lg-8 ul li a:hover{
+    border-bottom: 1px solid skyblue;
+}
+
+/*===menu design ends here=====*/
+
+/*===profile left side contant design strt from here===*/
+
+.container-fluid .profile .blar .pro_left{
+    width: 30%;
+    height: 600px;
+    margin-top: 50px;;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    float: left;
+
+}
+
+.container-fluid .profile .blar .pro_left img{
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.container-fluid .profile .blar .pro_left h2{
+    color: skyblue;
+    text-align: center;
+}
+.container-fluid .profile .blar .pro_left h3{
+    color: skyblue;
+    text-align: center;
+}
+
+.container-fluid .profile .blar .pro_left p{
+    color: white;
+    text-align: center;
+}
+
+
+/*==profile left side contant design ends here====*/
+
+/*===profile right contant design start form here====*/
+
+.container-fluid .profile .blar .pro_right{
+    width:100%;
+
+
+
+    float: right;
+    margin-top:50px;
+    padding:10px 0px;
+}
+
+.container-fluid .profile .blar .pro_right form label{
+    color: black;
+    padding: 10px;
+}
+
+.container-fluid .profile .blar .pro_right form input{
+    width: 700px;
+    display: block;
+
+
+
+
+}
+
+.container-fluid .profile .blar .pro_right .gender label{
+    padding: 5px;
+
+}
+
+.container-fluid .profile .blar .pro_right .gender input{
+    padding: 10px none;
+    width: 200px;
+    display: inline-block;
+}
+
+
+
+/*==profile right contant design ends here====*/

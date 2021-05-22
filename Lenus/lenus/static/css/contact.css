@@ -1,0 +1,98 @@
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*===menu bar design start from here========*/
+
+.container-fluid .contact .blar .menu{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border-bottom: 3px solid orangered;
+}
+
+.container-fluid .contact .blar .menu .col-lg-2 h1{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.container-fluid .contact .blar .menu .col-lg-8 ul li a{
+    color: white;
+    font-size: large;
+}
+
+.container-fluid .contact .blar .menu .col-lg-8 ul li a:hover{
+    border-bottom: 1px solid white;
+}
+
+/*===menu design ends here=====*/
+
+
+
+/*=====contact us page design start from here======*/
+.container-fluid .contact{
+    height: 100vh;
+    width: 100%;
+    background-color: #5cdb95;
+}
+
+
+.container-fluid .contact .blar {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.container-fluid .contact .blar .contact_body{
+    width:80%;
+    margin: auto;
+}
+
+
+.container-fluid .contact .blar .contact_body h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.container-fluid .contact .blar .contact_body hr{
+    width: 200px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 5px solid white;
+    margin: auto;
+
+}
+
+
+.container-fluid .contact .blar .contact_body h3{
+    color:white;
+    text-align: center;
+    margin-top:20px;
+}
+
+.container-fluid .contact .blar .contact_body .con_input{
+    width: 500px;
+    height: 600px;
+    
+    margin: auto;
+}
+
+.container-fluid .contact .blar .contact_body .con_input input{
+    display: block;
+    width: 100%;
+    background-color: #05386b;
+    padding: 10px 0px;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+/*=====conatct us page design ends here======*/
